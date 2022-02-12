@@ -57,46 +57,7 @@ function LoginForm(e) {
     return false;
   } else {
     console.log("Else block");
-    // if (localStorage.getItem("username") == username && localStorage.getItem("password") == password) {
-    axios
-      .get(`http://localhost:3000/users`)
-      .then((response) => {
-        return response.data;
-      })
-      .then((data) =>
-        data.some(
-          (data) => data.username == username && data.password == password
-        )
-      )
-      .then((credential) => {
-        if (credential) {
-          console.log(credential, "true");
-          alert("Login Successful");
-          document.getElementById("l_form").reset();
-          document.getElementById("div_hide").style.display = "none";
-          document.getElementById("user_table").style.display = "flex";
-
-          // Displaying Table
-          displayTable();
-        } else {
-          document.getElementById("l_form").reset();
-          alert("Invalid credentials");
-          console.log(credential, "false");
-        }
-      });
-
-    // if(){
-    //   alert("Login Successful");
-    //   document.getElementById("l_form").reset();
-    //   document.getElementById("div_hide").style.display = "none";
-    //   document.getElementById("user_table").style.display = "flex";
-
-    //   // Displaying Table
-    //   displayTable();
-    // } else {
-    //   document.getElementById("l_form").reset();
-    //   alert("Invalid Credentials");
-    // }
+    checkJSON(username,password);
   }
 }
 
@@ -260,4 +221,34 @@ function deleteJS(e) {
     console.log("Hii i m from Delete Function");
     alert("Delete Successfully.");
   }
+}
+
+//JSON Credentials
+function checkJSON(username, password) {
+  axios
+    .get(`http://localhost:3000/users`)
+    .then((response) => {
+      return response.data;
+    })
+    .then((data) =>
+      data.some(
+        (data) => data.username == username && data.password == password
+      )
+    )
+    .then((credential) => {
+      if (credential) {
+        console.log(credential, "true");
+        alert("Login Successful");
+        document.getElementById("l_form").reset();
+        document.getElementById("div_hide").style.display = "none";
+        document.getElementById("user_table").style.display = "flex";
+
+        // Displaying Table
+        displayTable();
+      } else {
+        document.getElementById("l_form").reset();
+        alert("Invalid credentials");
+        console.log(credential, "false");
+      }
+    });
 }
