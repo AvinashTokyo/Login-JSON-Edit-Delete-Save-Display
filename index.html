@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>POC 4</title>
+</head>
+
+<body>
+    <!-- Nav -->
+    <div id="nav-id">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
+            <div class="container">
+                <a class="navbar-brand py-0" href="index.html"><i class="fab fa-500px"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item nav-link">
+                            <a class="link-info" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item nav-link">
+                            <a class="link-info" href="#login_nav" id="login_nav">Login</a>
+                        </li>
+                        <li class="nav-item nav-link">
+                            <a class="link-info" href="#signup_nav" id="signup_nav">Signup</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Form -->
+    <div class="container my-5">
+        <div class="row justify-content-center" id="div_hide">
+            <h2 class="text-center mb-0 fw-bold w3-text-brown" id="signup_nav">Register! We'r Team Now</h2>
+            <div class="col-md-4 my-3">
+                <form action="" id="r_form">
+                    <div class="row my-3">
+                        <label for="r_name" class="w3-text-brown">Name</label>
+                        <input type="text" id="r_name" class="w3-input w3-border w3-sand name-valid">
+                        <span id="namePopup" style="display:none">Name Required</span>
+                    </div>
+                    <div class="row my-3">
+                        <label for="r_username" class="w3-text-brown">Username</label>
+                        <input type="text" id="r_username" class="w3-input w3-border w3-sand">
+                        <span id="usernamePopup" style="display:none">Username Required</span>
+                    </div>
+                    <div class="row my-3">
+                        <label for="r_password" class="w3-text-brown">Password</label>
+                        <input type="password" id="r_password" class="w3-input w3-border w3-sand">
+                        <span id="passwordPopup" style="display:none">Password Required</span>
+                    </div>
+                    <div class="row my-3">
+                        <input type="submit" value="Submit" id="r_submit" class="w3-btn w3-brown">
+                    </div>
+                    <div class="row ">
+                        <div class="or-container my-2">
+                            <div class="line-separator"></div>
+                            <div class="or-label">or</div>
+                            <div class="line-separator"></div>
+                        </div>
+                        <p class="text-inverse text-center">
+                            Already have an account?
+                            <a href="#login_nav" id="login_nav2">Login</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- News -->
+        <div class="col-5">
+
+        </div>
+
+        <!-- Login -->
+        <div class="row justify-content-center" id="login_div" style="display:none">
+            <h2 class="text-center fw-bold w3-text-teal">Login! Welcome To The Team</h2>
+            <div class="col-md-4 my-1">
+                <form action="" id="l_form">
+                    <div class="row my-3">
+                        <label for="l_username" class="w3-text-teal">Username</label>
+                        <input type="text" id="l_username" class="w3-input w3-border w3-light-grey">
+                        <span id="l_usernamePopup" style="display:none">Username Required</span>
+                    </div>
+                    <div class="row my-3">
+                        <label for="l_password" class="w3-text-teal">Password</label>
+                        <input type="password" id="l_password" class="w3-input w3-border w3-light-grey">
+                        <span id="l_passwordPopup" style="display:none">Password Required</span>
+                    </div>
+                    <div class="row my-3">
+                        <input type="submit" value="Submit" id="l_submit" class="w3-btn w3-blue-grey">
+                    </div>
+                    <div class="row ">
+                        <div class="or-container my-2">
+                            <div class="line-separator"></div>
+                            <div class="or-label">or</div>
+                            <div class="line-separator"></div>
+                        </div>
+                        <p class="text-inverse text-center">
+                            Create an account?
+                            <a href="#signup_nav" id="signup_nav2">Register</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Table -->
+    <div class="container">
+        <div class="row" id="user_table" style="display:none">
+            <div id="vscode" style="display:none">Plz use vs code server</div>
+            <!-- style="display:none" -->
+            <div class="row">
+                <h2 class="text-center my-3 fw-bold">Login Successfull! U r in Now</h2>
+            </div>
+            <!-- Button -->
+            <div class="row">
+                <div class="col-6">
+                    <input type="number" id="input" placeholder="Enter Row Id">
+                    <input type="submit" id="edit" value="Edit" class="btn btn-warning">
+                    <!-- <input type="text"> -->
+                    <input type="submit" id="save" value="Save" class="btn btn-success">
+                    <input type="number" id="inputDelete" class="my-2" placeholder="Enter JSON Id">
+                    <input type="submit" id="delete" value="Delete" class="btn btn-danger">
+                    <!-- <div class="row"> -->
+                        <p>Feeling Not Good Simon Go back!!<a href="index.html" class="logout my-0">Logout</a></p>
+                    <!-- </div> -->
+                </div>
+                
+                <div class="row" style="display: none" id="id_require"><span>Id is required!</span></div>
+
+            </div>
+            <!-- Table -->
+            <div class="row">
+                <table class="table table-hover">
+                    <thead class="table-primary">
+                        <tr>
+                            <!-- <th scope="col">Id</th> -->
+                            <th scope="col">Row Id</th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Username</th>
+                            <th scope="col">Password</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_content" class="table_color">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Validation using Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./script/axios.js"></script>
+</body>
+
+</html>

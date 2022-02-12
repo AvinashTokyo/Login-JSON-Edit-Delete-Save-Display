@@ -1,0 +1,4 @@
+In CMD
+1. npm install -g json-server
+2. Run the JSON Server in CMD  - json-server --watch db.json 
+    it creates a db.JSON file with SOME code.

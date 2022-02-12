@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "users": [
+    {
+      "name": "tokyo2",
+      "username": "japan2",
+      "password": "09876",
+      "id": 1
+    },
+    {
+      "name": "VivekPAL2",
+      "username": "PalVivek2",
+      "password": "PalVivek",
+      "id": 2
+    },
+    {
+      "name": "shiva",
+      "username": "shiva",
+      "password": "shiva",
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  // background-color: #d5e4d9;
+}
+
+h2,
+a {
+  font-variant: small-caps;
+  color:blueviolet;
+}
+
+.or-container {
+  align-items: center;
+  color: #ccc;
+  display: flex;
+}
+.line-separator {
+  background-color: #ccc;
+  flex-grow: 5;
+  height: 1px;
+}
+.or-label {
+  flex-grow: 1;
+  margin: 0 15px;
+  text-align: center;
+  display: v;
+}
+
+.no-border {
+  border: 0;
+  box-shadow: none;
+  // background-color: rgba(237,237,237,255);
+}
+
+label {
+  font-weight: bold;
+}
+
+span {
+  color: yellowgreen;
+  font-weight: bold;
+}
+
+.no-border {
+  border: 0;
+  box-shadow: none;
+  // background-color: rgba(0, 0, 0, 0.075);
+}
+
+// Only For Number in Input Field.
+// / Chrome, Safari, Edge, Opera /
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+// / Firefox /
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.logout{
+  color: green;
+  font-weight: bold;
+  font-variant: small-caps;
+  margin: 0;
+}

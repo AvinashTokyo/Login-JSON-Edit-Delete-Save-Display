@@ -1,0 +1,35 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "users": [
+    {
+      "name": "Avinash1",
+      "username": "Avinash1123",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "name": "Keshav",
+      "username": "Kes26",
+      "password": "2626",
+      "id": 2
+    },
+    {
+      "name": "zz",
+      "username": "zz",
+      "password": "zz",
+      "id": 4
+    },
+    {
+      "name": "Abhishek",
+      "username": "Abhi25",
+      "password": "2525",
+      "id": 5
+    }
+  ]
+}
